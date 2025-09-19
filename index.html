@@ -617,12 +617,12 @@ section {
     padding: 3rem;
     border-radius: 1.25rem;
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.6);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /*transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
     border: 1px solid rgba(255, 255, 255, 0.08);
     position: relative;
     overflow: hidden;
 }
-.project-card::before {
+/*.project-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -630,9 +630,13 @@ section {
     right: 0;
     height: 3px;
     background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
-}
-.project-card:hover { 
-    transform: translateY(-8px); 
+}*/
+/*.project-card:hover { 
+    /*transform: translateY(-8px); 
+    box-shadow: 0 0 28px rgba(168, 85, 247, 0.45); 
+}*/
+.project-card:hover {
+    border-color: #a855f7;
     box-shadow: 0 0 28px rgba(168, 85, 247, 0.45); 
 }
 
@@ -698,6 +702,7 @@ section {
 .project-buttons {
     display: flex;
     gap: 1rem;
+    height: 50px;
 }
 
 .projects-footer {
@@ -841,7 +846,7 @@ section {
     padding: 2rem;
     border-radius: 1.25rem;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
     border: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     flex-direction: column;
@@ -849,7 +854,7 @@ section {
 }
 
 .certification-card:hover {
-    transform: translateY(-5px);
+    /*transform: translateY(-5px);*/
     box-shadow: 0 0 28px rgba(168, 85, 247, 0.45);
     border-color: #a855f7;
 }
@@ -1627,6 +1632,10 @@ section {
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-icon">
                         <span class="skill-name">C</span>
                     </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="C" class="skill-icon">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
                 </div>
             </div>
 
@@ -1669,6 +1678,10 @@ section {
                     </div>
                     <div class="skill-card">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="skill-icon">
+                        <span class="skill-name">VS Code</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="VS Code" class="skill-icon">
                         <span class="skill-name">VS Code</span>
                     </div>
                 </div>
